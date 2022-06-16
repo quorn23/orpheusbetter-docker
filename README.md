@@ -4,6 +4,24 @@ FORK INFO
 Got asked to create a docker image.
 Based on Hotios Base Alpine image.
 
+    $   orpheusbetter:
+    container_name: orpheusbetter
+    hostname: orpheusbetter
+    logging: *default-logging
+    image: ${ORPHEUS}
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    labels:
+      - "org.hotio.pullio.notify=${PULLIO_NOTIFY}"
+      - "org.hotio.pullio.update=${PULLIO_UPDATE}"
+      - "org.hotio.pullio.discord.webhook=${PULLIO_DISCORD_WEBHOOK}"
+      - "org.hotio.pullio.author.avatar=${AVATAR_ORPHEUS}"
+    restart: "no"
+    volumes:
+      - ${DOCKERCONFDIR}/orpheusbetter:/config/.orpheusbetter
+      - ${DOCKERDATADIR}/torrents:/data/torrents
+
 
 Introduction
 ------------
