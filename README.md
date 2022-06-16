@@ -4,7 +4,8 @@ FORK INFO
 Got asked to create a docker image.
 Based on Hotios Base Alpine image.
 
-```orpheusbetter:
+```
+orpheusbetter:
     container_name: orpheusbetter
     hostname: orpheusbetter
     logging: *default-logging
