@@ -34,7 +34,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/quorn23/opstest
+          images: ghcr.io/quorn23/orpheusbetter-docker
 
       - name: Build and publish image
         id: docker_build
