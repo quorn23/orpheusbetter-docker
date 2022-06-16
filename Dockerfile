@@ -14,6 +14,6 @@ ARG GIT_BRANCH
 RUN chmod -R u=rwX,go=rX "${APP_DIR}" && \
     echo "v${VERSION}" > "${APP_DIR}/version.txt" && \
     echo "${GIT_BRANCH}" > "${APP_DIR}/branch.txt" && \
-    chmod +x "${APP_DIR}"/orpheusbetter
+    chmod +x "${APP_DIR}"/start.sh
 
-ENTRYPOINT "${APP_DIR}"/orpheusbetter
+ENTRYPOINT "${APP_DIR}"/start.sh
