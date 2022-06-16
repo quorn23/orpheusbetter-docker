@@ -21,7 +21,8 @@ orpheusbetter:
     restart: "no"
     volumes:
       - ${DOCKERCONFDIR}/orpheusbetter:/config/.orpheusbetter
-      - ${DOCKERDATADIR}/torrents:/data/torrents```
+      - ${DOCKERDATADIR}/torrents:/data/torrents
+ ```
 
 
 Introduction
