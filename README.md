@@ -1,3 +1,10 @@
+FORK INFO
+---------
+
+Got asked to create a docker image.
+Based on Hotios Base Alpine image.
+
+
 Introduction
 ------------
 
