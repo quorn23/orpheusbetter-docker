@@ -4,7 +4,7 @@ FORK INFO
 Got asked to create a docker image.
 Based on Hotios Base Alpine image.
 
-    $   orpheusbetter:
+```orpheusbetter:
     container_name: orpheusbetter
     hostname: orpheusbetter
     logging: *default-logging
@@ -20,7 +20,7 @@ Based on Hotios Base Alpine image.
     restart: "no"
     volumes:
       - ${DOCKERCONFDIR}/orpheusbetter:/config/.orpheusbetter
-      - ${DOCKERDATADIR}/torrents:/data/torrents
+      - ${DOCKERDATADIR}/torrents:/data/torrents```
 
 
 Introduction
